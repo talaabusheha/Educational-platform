@@ -5,74 +5,91 @@
     <html lang="ar" dir="rtl">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>منصة تعليمية</title>
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="mt-3 mb-2 ">
-    <div class="flex items-center justify-between w-[80%] h-auto m-auto">
+  <header class="mt-3 mb-2  ">
+    <div class="w-[90%] m-auto flex items-center justify-between">
       
-           <h1  class="font-bold text-[28px] flex"><img src="image/booh-header.svg" alt="">منصة التعليم الأكاديمي</h1>
+           <h1  class="flex items-center gap-2 text-[22px] font-bold"><img src="image/booh-header.svg" alt="">منصة التعليم الأكاديمي</h1>
             
        
-        <nav>
-            <ul class="list-none flex decoration-0 gap-5 text-[18px] ">
-                <li><a class="active text-[#4f39f6]" href="">الرئيسية</a></li>
-                <li><a href="">الكورسات</a></li>
-                <li><a href="">حول المنصة</a></li>
-            </ul>
+       
+        <nav id="mobileMenu" class="hidden md:flex md:justify-center">
+        <ul class="flex flex-col md:flex-row gap-4 md:gap-6 text-[18px] mt-4 md:mt-0">
+           <li><a class="text-[#4f39f6]" href="">الرئيسية</a></li>
+           <li><a href="">الكورسات</a></li>
+           <li><a href="">حول المنصة</a></li>
+        </ul>
         </nav>
+        <button id="menuBtn" class="text-3xl md:hidden " aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+        <button id="menuBtn" class="text-3xl hidden " aria-label="Open Menu"><i class="fa-solid fa-xmark"></i></button>
+       
     </div>
+    <!-- Side Menu -->
+    <nav id="sideMenu"
+    class="fixed top-14 left-0 h-full w-64 bg-white
+         -translate-x-full
+         transition-transform duration-300 ease-in-out
+         md:hidden">
+    <ul class="flex flex-col md:flex-row gap-6 p-6 md:p-0 text-[18px]">
+        <li><a class="menu-link text-[#4f39f6]" href="#">الرئيسية</a></li>
+        <li><a class="menu-link" href="#">الكورسات</a></li>
+        <li><a class="menu-link" href="#">حول المنصة</a></li>
+    </ul>
+    </nav>
   </header>
   <main>
-    <section class=" bg-[#155dfc] p-[80px] text-white">
-       
-       <div class="w-[100%] mx-auto block mt-3 md:flex gap-4">
-         <div class="w-[100%] ">
-            <p class=" h-auto w-auto bg mb-4 text-[12px]">منصة التعليم الأكاديمي للمهندسين</p>
-            <h1 class="text-[30px] leading-[1.1]">رحلتك التعليمية تبدأ من هنا<h1>
-            <p class="mt-2 text-[13px]">منصة تعليمية متكاملة لطلاب الهندسة وتكنولوجيا المعلومات. اكتشف مئات الكورسات الأكاديمية المنظمة والمصممة خصيصاً لدعم مسيرتك التعليمية.</p>
+    <section class=" bg-[#155dfc] p-20 text-white w-full">
+    <div class="w-full mx-auto block mt-3 lg:flex gap-4">
+         <div class="w-full">
+            <p class=" h-auto w-auto bg mb-4 text-[12px] md:text-[15px]">منصة التعليم الأكاديمي للمهندسين</p>
+            <h1 class="text-[30px] leading-[1.1] md:text-[60px]">رحلتك التعليمية تبدأ من هنا<h1>
+            <p class="mt-2 text-[12px] md:text-[18px]">منصة تعليمية متكاملة لطلاب الهندسة وتكنولوجيا المعلومات. اكتشف مئات الكورسات الأكاديمية المنظمة والمصممة خصيصاً لدعم مسيرتك التعليمية.</p>
             <div class="flex mt-[25px] gap-2">
-            <a href=""><button class="flex items-center justify-center gap-2 cursor-pointer bg-white h-[30px] w-[130px] rounded text-[#4f39f6] text-[12px]">تصفح الكورسات<img src="image/row.svg" alt=""></button></a>               
-            <a href=""><button class="flex items-center justify-center gap-2 cursor-pointer bg-white h-[30px] w-[130px] rounded text-[#4f39f6] text-[12px]">تعرف علينا </button>
+            <a href=""><button class="flex items-center justify-center gap-2 cursor-pointer bg-white h-[30px] w-[108px] rounded text-[#4f39f6] text-[12px] md:w-[200px] md:h-[50px] md:text-[18px]">تصفح الكورسات<img src="image/row.svg" alt=""></button></a>               
+            <a href=""><button class="flex items-center justify-center gap-2 cursor-pointer bg-white h-[30px] w-[108px] rounded text-[#4f39f6] text-[12px] md:w-[200px] md:h-[50px] md:text-[18px]">تعرف علينا </button>
             </a>
             </div>
         </div>
         <div class="gap-4 w-[100%] p-8 bg-white/30 rounded-2xl mt-5">
             <div class="flex mb-2 bg-white/15 rounded-2xl ">
-                <div><img class="p-3 w-15 h-auto " src="image/2-1.svg" alt=""></div>
+                <div><img class="p-3 w-15 h-auto md:w-20" src="image/2-1.svg" alt=""></div>
                 <div>
-                    <div class="bg-white/40 h-1.5 w-20 mr-1.5  mt-5 rounded-2xl"></div>
-                    <div class="bg-white/30 h-1.5 w-16 mr-1.5  mt-2 rounded-2xl"></div>
+                    <div class="bg-white/40 h-1.5 w-20 mr-1.5  mt-5 rounded-2xl md:h-2 md:w-28"></div>
+                    <div class="bg-white/30 h-1.5 w-16 mr-1.5  mt-2 rounded-2xl md:h-2 md:w-20"></div>
                 </div>
             
             
             </div>
             <div class="flex mb-2 bg-white/15 rounded-2xl" >
-                <div><img class="p-3 w-15 h-auto" src="image/2-2.svg" alt=""></div>
+                <div><img class="p-3 w-15 h-auto md:w-20" src="image/2-2.svg" alt=""></div>
                 <div>
-                    <div class="bg-white/40 h-1.5 w-20 mr-1.5  mt-5 rounded-2xl"></div>
-                    <div class="bg-white/30 h-1.5 w-16 mr-1.5  mt-2 rounded-2xl"></div>
+                    <div class="bg-white/40 h-1.5 w-20 mr-1.5  mt-5 rounded-2xl md:h-2 md:w-28"></div>
+                    <div class="bg-white/30 h-1.5 w-16 mr-1.5  mt-2 rounded-2xl md:h-2 md:w-20"></div>
                 </div>
             
             
             </div>
             <div class="flex mb-2 bg-white/15 rounded-2xl">
-                <div><img class="p-3 w-15 h-auto" src="image/2-3.svg" alt=""></div>
+                <div><img class="p-3 w-15 h-auto md:w-20" src="image/2-3.svg" alt=""></div>
                 <div>
-                <div class="bg-white/40 h-1.5 w-20 mr-1.5  mt-5 rounded-2xl"></div>
-                <div class="bg-white/30 h-1.5 w-16 mr-1.5  mt-2 rounded-2xl"></div>
-            </div>
+                <div class="bg-white/40 h-1.5 w-20 mr-1.5  mt-5 rounded-2xl md:h-2 md:w-28"></div>
+                <div class="bg-white/30 h-1.5 w-16 mr-1.5  mt-2 rounded-2xl md:h-2 md:w-20"></div>
+                </div>
             
             
             </div>
            
         </div>
-</div>
+    </div>
     </section>
-    <section class="mt-5" >
-    <div class="w-[80%] m-auto justify-between flex mx-auto text-center items-center ">
+    <section class="mt-10 mb-10 mr-10">
+        <!-- md:mx-auto md:text-center md:items-center md:gap-4 -->
+    <div class="w-[80%] m-auto grid grid-rows-2 grid-cols-2 gap-6 justify-center items-center md:grid md:grid-cols-4 md:items-center ">
         <div class="items-center">
             <img class="h-8 w-10 mb-5" src="image/+.svg" alt="">
             <p>كورس اكاديمي</p>
@@ -95,6 +112,6 @@
   </main>
 
 
-
+<script src="js/script.js"></script>
 </body>
 </html>
