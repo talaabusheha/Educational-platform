@@ -10,4 +10,3 @@
   mark.classList.replace("fa-xmark", "fa-bars");
 }
 }
-  
