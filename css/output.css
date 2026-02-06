@@ -236,9 +236,6 @@
   .mr-1 {
     margin-right: calc(var(--spacing) * 1);
   }
-  .mr-2 {
-    margin-right: calc(var(--spacing) * 2);
-  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -293,9 +290,6 @@
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
-  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
@@ -311,14 +305,8 @@
   .h-full {
     height: 100%;
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-5 {
     width: calc(var(--spacing) * 5);
-  }
-  .w-9 {
-    width: calc(var(--spacing) * 9);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -338,20 +326,8 @@
   .w-32 {
     width: calc(var(--spacing) * 32);
   }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
-  }
-  .w-56 {
-    width: calc(var(--spacing) * 56);
-  }
   .w-64 {
     width: calc(var(--spacing) * 64);
-  }
-  .w-80 {
-    width: calc(var(--spacing) * 80);
-  }
-  .w-96 {
-    width: calc(var(--spacing) * 96);
   }
   .w-\[80\%\] {
     width: 80%;
@@ -444,9 +420,6 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
-  .rounded-\[2xl\] {
-    border-radius: 2xl;
-  }
   .rounded-\[10px\] {
     border-radius: 10px;
   }
@@ -485,17 +458,14 @@
   .bg-\[\#155DFC\] {
     background-color: #155DFC;
   }
-  .bg-\[\#155DFC\]\/70 {
-    background-color: color-mix(in oklab, #155DFC 70%, transparent);
-  }
   .bg-\[\#155dfc\] {
     background-color: #155dfc;
   }
-  .bg-\[\#BEDBFF\] {
-    background-color: #BEDBFF;
-  }
   .bg-\[\#BEDBFF\]\/20 {
     background-color: color-mix(in oklab, #BEDBFF 20%, transparent);
+  }
+  .bg-\[\#D1D5DC\] {
+    background-color: #D1D5DC;
   }
   .bg-\[\#DBEAFE\] {
     background-color: #DBEAFE;
@@ -508,6 +478,9 @@
   }
   .bg-\[\#F9FAFB\] {
     background-color: #F9FAFB;
+  }
+  .bg-\[\#F9FAFB\]\/20 {
+    background-color: color-mix(in oklab, #F9FAFB 20%, transparent);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -581,17 +554,11 @@
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
-  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
-  }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -690,6 +657,9 @@
   }
   .text-\[\#364153\] {
     color: #364153;
+  }
+  .text-\[\#D1D5DC\] {
+    color: #D1D5DC;
   }
   .text-\[\#DBEAFE\] {
     color: #DBEAFE;
