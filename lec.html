@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" dir="rtl">
+    <html lang="ar" dir="rtl">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة تعليمية</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#F9FAFB]">
+    <header class="sticky top-0 z-50 bg-white shadow-[0_1px_2px_-1px_rgba(0,0,0,0.1),0_1px_3px_0_rgba(0,0,0,0.1)]  md:mb-2 md:static ">    
+    <div class="w-full p-2 m-auto flex items-center justify-between md:w-[90%]">
+      
+           <h1  class="flex items-center gap-2 text-[22px] font-bold"><img src="image/booh-header.svg" alt="">منصة التعليم الأكاديمي</h1>
+            
+       
+       
+        <nav id="mobileMenu" class="hidden md:flex md:justify-center">
+        <ul class="flex flex-col md:flex-row gap-4 md:gap-6 text-[18px] mt-4 md:mt-0">
+           <li><a  href="#">الرئيسية</a></li>
+           <li><a href="courses.html">الكورسات</a></li>
+           <li><a href="about.html">حول المنصة</a></li>
+        </ul>
+        </nav>
+        <button id="menuBtn" class="text-3xl md:hidden cursor-pointer" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+   
+       
+    </div>
+    <!-- Side Menu -->
+    <nav id="sideMenu"
+    class="fixed top-[56.2px] left-0 h-full w-64 bg-white
+         -translate-x-full
+         transition-transform duration-300 ease-in-out
+         md:hidden">
+    <ul class="flex flex-col md:flex-row gap-6 p-6 md:p-0 text-[18px]">
+        <li><a class="menu-link " href="index.html">الرئيسية</a></li>
+        <li><a class="menu-link" href="courses.html">الكورسات</a></li>
+        <li><a class="menu-link" href="about.html">حول المنصة</a></li>
+    </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="mt-5 w-[95%] p-3  md:w-[65%] m-auto">
+        <a class="flex hover:text-[#4f39f6] duration-300 text-[#4A5565]" href="courses.html"><img class="ml-1" src="image/Sahim.svg" alt="">العودة إلى الكورسات</a>
+        <div class="mt-5 shadow-[0_1px_2px_-1px_rgba(0,0,0,0.1),0_1px_3px_0_rgba(0,0,0,0.1)] p-4 rounded-xl">
+            <span class="bg-[#DBEAFE] rounded-2xl px-2 ml-2 text-[#1447E6]">الهندسة </span>
+            <span class="bg-[#F3F4F6] rounded-2xl px-2 ml-2 text-[#364153]">المستوى الأول </span>
+            <span class="bg-[#F3F4F6] rounded-2xl px-2 ml-2 text-[#364153]">الفصل الأول </span>
+            <h2 class=" mt-6 font-bold text-[20px] md:text-[28px]">الرياضيات الهندسية</h2>
+            <p class="text-[#4A5565] text-[12px] mt-1 md:text-[16px]" >يغطي هذا الكورس المفاهيم الرياضية الأساسية اللازمة للطلاب الهندسيين، بما في ذلك التفاضل، التكامل، والمعادلات التفاضلية. التركيز على
+التطبيقات الهندسية العملية.</p>
+</div></section>
+<section class="mt-5 w-[95%] p-3  md:w-[65%] m-auto">
+<div class="mt-5 shadow-[0_1px_2px_-1px_rgba(0,0,0,0.1),0_1px_3px_0_rgba(0,0,0,0.1)] p-4 rounded-xl">
+   <div class="flex justify-between"> <h3 class="">التقدم في الكورس</h3>
+<p class="text-[#155DFC] font-normal">12/5 درس</p>
+</div>
+<div class="h-2 w-auto mt-4 ">
+    <div class=" h-2 w-32 md:w-96 rounded-2xl bg-gradient-to-l from-[#155DFC] to-[#4F39F6]"></div>
+   
+</div>
+ <p class="text-[#4A5565] mt-4">42مكتمل </p>
+</div>
+
+        
+    </section>
+    <section class="mt-5 w-[95%] p-3  md:w-[65%] m-auto">
+        <div class="mt-5 shadow-[0_1px_2px_-1px_rgba(0,0,0,0.1),0_1px_3px_0_rgba(0,0,0,0.1)] p-4 rounded-xl">
+            <div class="flex justify-between bg-[#BEDBFF]/20 mt-5 shadow-[0_1px_2px_-1px_rgba(0,0,0,0.1),0_1px_3px_0_rgba(0,0,0,0.1)] p-4 rounded-xl">
+               <div>
+                 <span class="rounded-[50%] bg-[#155DFC] text-white px-2 ml-2">1</span>
+                <span class="text-[#1C398E] font-bold text-[12px] ml-2"> مراجعة الجبر والدوال  </span></div>
+                <div>
+                    <label class="cursor-pointer inline-flex">
+                <input type="checkbox" class="peer hidden">
+                <span class="h-5 w-5 rounded-full border border-[#155DFC]
+               flex items-center justify-center
+               peer-checked:bg-[#155DFC]">
+    <span class="hidden peer-checked:block text-white text-xs">✓</span>
+  </span></label></div>
+
+
+            </div>
+        </div>
+    </section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
