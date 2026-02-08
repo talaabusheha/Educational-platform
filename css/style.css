@@ -1,3 +1,6 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 @font-face {
   font-family: 'Cairo';
   src: url("../font/Cairo/Cairo-VariableFont_slnt,wght.ttf") format('truetype');
@@ -7,3 +10,14 @@
 body {
   font-family: "Cairo", sans-serif;
 }
+.btnc{
+  background: linear-gradient(to right, #155DFC, #4F39F6);
+  box-shadow:
+    0 -1px 2px -1px rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 0.75rem 1.5rem; /* py-3 px-6 */
+  color: #ffffff;
+  width: 100%;
+  margin-top: 1rem;
+  cursor: pointer;}
